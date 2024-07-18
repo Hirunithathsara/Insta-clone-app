@@ -1,9 +1,11 @@
 import React from 'react'
 import { View,Text,Image, TouchableOpacity } from 'react-native'
+import { Header } from 'react-native/Libraries/NewAppScreen'
 
 const header = () => {
   return (
-    <View>
+    
+    
    <View style={{paddingHorizontal:15,
                  flexDirection:'row',
                  alignItems:'center',
@@ -31,48 +33,16 @@ const header = () => {
         </View>
         </View>
       </TouchableOpacity>
-
-    </View>
-    
-
-   
- </View>
- <View style={{flexDirection:'row',marginTop:8}}>
-  <View style={{marginLeft:10}}>
-        <TouchableOpacity>
-          <View style={{borderWidth:3,borderRadius:40,padding:2}}>
-        <Image style={{height:70,width:70,borderRadius:35,}} 
-        source={require('../assets/images/mak.png')}/>
-        </View>
-        </TouchableOpacity>
-      </View>
-
-      <View style={{marginLeft:10}}>
-        <TouchableOpacity>
-          <View style={{borderWidth:3,borderRadius:40,padding:2}}>
-        <Image style={{height:70,width:70,borderRadius:35,}} 
-        source={require('../assets/images/mak.png')}/>
-        </View>
-        </TouchableOpacity>
-      </View>
-      <View style={{marginLeft:10}}>
-        <TouchableOpacity>
-          <View style={{borderWidth:3,borderRadius:40,padding:2}}>
-        <Image style={{height:70,width:70,borderRadius:35,}} 
-        source={require('../assets/images/mak.png')}/>
-        </View>
-        </TouchableOpacity>
-      </View>
       </View>
      
-
  </View>
  
  
 
+    
+ 
  
   )
-  
 }
 
 export default header

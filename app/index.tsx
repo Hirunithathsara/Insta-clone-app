@@ -1,9 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { View,Text } from 'react-native'
 
-export default class index extends Component {
-  render() {
-    return (
-      <div></div>
-    )
-  }
+const index = () => {
+  return (
+   <View>
+    <Text ><h1>Instagram</h1></Text>
+
+   </View>
+  )
 }
+
+export default index

@@ -1,7 +1,7 @@
 import React from 'react'
 import { View,Text, Image, TouchableOpacity } from 'react-native'
 
-const profile = () => {
+const myprofile = () => {
   return (
     <View>
     <View style={{paddingHorizontal:15,paddingTop:10,height:55}}>
@@ -82,4 +82,4 @@ const profile = () => {
   )
 }
 
-export default profile
+export default myprofile

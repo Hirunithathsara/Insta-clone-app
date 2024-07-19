@@ -1,6 +1,6 @@
 import React from 'react'
-import { View,Text,Image, TouchableOpacity } from 'react-native'
-
+import { View,Text,Image, TouchableOpacity, Button } from 'react-native'
+import { router } from 'expo-router'
 const home = () => {
   return (
     <View>
@@ -17,6 +17,7 @@ const home = () => {
       <TouchableOpacity style={{marginRight:15}}>
         <Image  style={{height:24,width:25}} source={require('../assets/images/heart.png')}/>
       </TouchableOpacity>
+      
 
       <TouchableOpacity>
         <View style={{position:'relative'}}>
@@ -32,12 +33,8 @@ const home = () => {
         </View>
         </View>
       </TouchableOpacity>
-
-    </View>
-    
-
-   
- </View>
+       </View>
+     </View>
  <View style={{flexDirection:'row',marginTop:8}}>
   <View style={{marginLeft:10}}>
         <TouchableOpacity>
@@ -73,7 +70,9 @@ const home = () => {
         <View>
         <Image style={{height:290,width:470,marginTop:20,borderRadius:25}} 
         source={require('../assets/images/pic.jpg')}/>
+       
         </View>
+        
 
         <View style={{paddingHorizontal:15,
                  flexDirection:'row',
@@ -91,8 +90,10 @@ const home = () => {
             <View>
           <Text style={{marginLeft:20,marginTop:10,fontSize:16,fontWeight:'600',color:'black'}}>Liked by and 895 others</Text>
         </View>
+        
       </View>
-
+      <Button title='Sin in'
+      onPress={()=>router.push('/myprofile')}></Button>
  </View>
  
   )

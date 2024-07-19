@@ -1,5 +1,7 @@
-import { View, Text,TextInput,Image,StyleSheet,TouchableOpacity } from 'react-native'
+import { View, Text,TextInput,Image,StyleSheet,TouchableOpacity, Button } from 'react-native'
 import React from 'react'
+import { router } from 'expo-router'
+
 
 export default function loginPage() {
   return (
@@ -14,9 +16,9 @@ export default function loginPage() {
        <TextInput placeholder=" Password"
          placeholderTextColor={'grey'} style={styles.iginput}/>
        
-       <TouchableOpacity >
-        <Text style={styles.mybtn}>Log in</Text>
-       </TouchableOpacity>
+       <Button  title='Log in'
+      onPress={()=>router.push('/home')}></Button>
+       
     </View>
   )
 }
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
     
 
   },
-  mybtn:{
+ Button:{
     width:300,
     height:50,
     margin:12,
